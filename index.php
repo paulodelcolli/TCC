@@ -73,18 +73,53 @@
 
 						</div>
 
-						<div class="card-footer">
-							<div class="input-group">
+						<form action="" method="POST">
+							<div class="card-footer">
+								<div class="input-group">
 
-								<input type="text"  name="" class="form-control type_msg" placeholder="Insira sua mensagem..."></input>
-								<div class="input-group-append">
-									<span class="input-group-text send_btn"><i class="fas fa-location-arrow"></i></span>
+									<input type="text"  name="txt_msg" class="form-control type_msg" placeholder="Insira sua mensagem..." />
+									<div class="input-group-append">
+										<span class="input-group-text send_btn"><i class="fas fa-location-arrow"></i></span>
+									</div>
+									<input type="submit" value="enviar"/>
 								</div>
 							</div>
-						</div>
+						</form>
 					</div>
 				</div>
 			</div>
 		</div>
 	</body>
+	<?php
+
+		if(isset($_POST["txt_msg"]) ){
+			$data = array("msgForward" => $_POST["txt_msg"]);
+			$url = "localhost:5000/recData";  
+			$content = json_encode($data);
+
+			$curl = curl_init($url);
+			curl_setopt($curl, CURLOPT_HEADER, false);
+			curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+			curl_setopt($curl, CURLOPT_HTTPHEADER,
+					array("Content-type: application/json"));
+			curl_setopt($curl, CURLOPT_POST, true);
+			curl_setopt($curl, CURLOPT_POSTFIELDS, $content);
+
+			$json_response = curl_exec($curl);
+
+			$status = curl_getinfo($curl, CURLINFO_HTTP_CODE);
+
+			if ( $status != 200 ) {
+				die("Error: call to URL $url failed with status $status, response $json_response, curl_error " . curl_error($curl) . ", curl_errno " . curl_errno($curl));
+			}
+
+
+			curl_close($curl);
+
+			$response = json_decode($json_response, true);
+
+			echo($json_response);
+		}
+		
+	?>
 </html>
