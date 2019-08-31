@@ -17,7 +17,7 @@ class chatter:
     def setNome(self, nome):
         self.nome = nome
 
-    def setResposta(self, idade): 
+    def setResposta(self, resposta): 
         self.resposta = resposta
 
     def getNome(self): 
@@ -25,6 +25,14 @@ class chatter:
 
     def getResposta(self): 
         return self.resposta
+
+     def print(self, **kwargs):
+                #print(kwargs)
+                self.msg = kwargs.get('msgForward')
+                print("recebido: %s" % (kwargs.get('msgForward')) )
+
+                return "msg recebida:"+self.msg+", eu deveria processar e fazer algo"
+
 
 obj = PrintaAlgo()
 
