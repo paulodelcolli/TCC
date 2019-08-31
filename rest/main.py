@@ -17,7 +17,7 @@ class chatter:
     def setNome(self, nome):
         self.nome = nome
 
-    def setResposta(self, idade): 
+    def setResposta(self, resposta): 
         self.resposta = resposta
 
     def getNome(self): 
@@ -25,6 +25,18 @@ class chatter:
 
     def getResposta(self): 
         return self.resposta
+
+    def postRec():
+        print(request.is_json)
+        content = request.get_json()
+        #print(content)
+        #print(content['id'])
+        try:
+            print(content['msgForward'])
+        except:
+            print(sys.exc_info()[0])
+        print("enviando msg para o outro objeto...")
+
 
 obj = PrintaAlgo()
 
