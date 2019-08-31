@@ -9,6 +9,23 @@ from recebe import PrintaAlgo
 app = Flask(__name__)
 
 #eu deveria instanciar a classe do chatter
+class chatter:
+    def __init__(self, nome, resposta): 
+        self.nome = "Charlie" 
+        self.resposta = resposta
+
+    def setNome(self, nome):
+        self.nome = nome
+
+    def setResposta(self, idade): 
+        self.resposta = resposta
+
+    def getNome(self): 
+        return self.nome
+
+    def getResposta(self): 
+        return self.resposta
+
 obj = PrintaAlgo()
 
 @app.route('/')
