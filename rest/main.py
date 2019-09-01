@@ -26,12 +26,25 @@ class chatter:
     def getResposta(self): 
         return self.resposta
 
+
      def print(self, **kwargs):
                 #print(kwargs)
                 self.msg = kwargs.get('msgForward')
                 print("recebido: %s" % (kwargs.get('msgForward')) )
 
                 return "msg recebida:"+self.msg+", eu deveria processar e fazer algo"
+
+    def postRec():
+        print(request.is_json)
+        content = request.get_json()
+        #print(content)
+        #print(content['id'])
+        try:
+            print(content['msgForward'])
+        except:
+            print(sys.exc_info()[0])
+        print("enviando msg para o outro objeto...")
+
 
 
 obj = PrintaAlgo()
