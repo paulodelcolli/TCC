@@ -9,13 +9,13 @@ bot = ChatBot('Test')
 #bot.set_trainer(ListTrainer)
 trainer = ListTrainer(bot)
 
-for arq in os.listdir('arq'):
-    chats = open('arq/' + arq, 'r').readlines() 
+#for arq in os.listdir('arq'):
+ #   chats = open('arq/' + arq, 'r').readlines() 
     #bot.train(chats)
-    trainer.train(chats)
+ #   trainer.train(chats)
 
 while True:
-    resq = input('Você: ')
+    resq = input('')
 
     resp = bot.get_response(resq)
     print('Charlie: ' + str(resp))
