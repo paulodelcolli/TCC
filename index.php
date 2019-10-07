@@ -24,7 +24,7 @@
 						<div class="card-header msg_head">
 							<div class="d-flex bd-highlight">
 								<div class="img_cont">
-									<img src="style/img/Freud1.jpg" class="rounded-circle user_img">
+									<img src="style/img/foto.png" class="rounded-circle user_img">
 								</div>
 								<div class="user_info">
 									<span>Charles</span>
