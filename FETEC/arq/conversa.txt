@@ -21,3 +21,47 @@ Tudo bem, boa sorte e que tudo de certo!
 Obrigado, foi um prazer! 
 O prazer foi meu. ;) 
 
+Ir para o conteúdo
+Think with Google
+Entrando na conversa: como criar chatbots bons de papo
+Assine
+Entrando na conversa: como criar chatbots bons de papo
+Março de 2017 Tendências de Consumo, Entretenimento, Telecomunicações, UX e Design
+
+Hoje em dia, temos que ir muito além dos elementos gráficos para construir a identidade de uma marca. Os profissionais de branding precisam estar prontos para definir não só como as empresas se apresentam visualmente para o público, mas também como elas se comportam nas interações com ele. Como podemos construir diálogos úteis e interessantes usando chatbots?
+
+Como toda experiência de marca, as conversas com os bots também precisam ser “desenhadas”. Da mesma forma que temos que projetar a navegação de um site, precisamos planejar o fluxo da conversa, escrever os textos e pensar na estratégia conversacional da marca para criar um chatbot.
+
+O primeiro passo para desenvolver um bot de marca eficiente é criar uma persona, ou seja, imaginar sua marca como se fosse uma pessoa e definir seu comportamento diante das mais variadas situações. Comece se perguntando como essa pessoa agiria em um chat e evolua para um universo mais amplo. Aí vão algumas perguntas que você poderia se fazer para começar:
+Chatbot
+
+Quanto mais abrangente for o universo no qual você imaginou, mais rica será a experiência com seu bot. O ideal é que você chegue a perguntas que tiram a marca da janelinha do chat e a levam para o mundo lá fora, traçando aspectos cada vez mais profundos da "personalidade" da marca. Não se assuste se você se pegar fazendo perguntas do tipo: "Como minha marca se comportaria na mesa de um bar?" O caminho é por aí mesmo.
+Chatbot
+
+Definidas as características da personalidade do seu chatbot, é hora de sair do plano abstrato e começar a desenvolver o bate-papo em si. Imagine que você criou um assistente de reservas de passagens. Ele poderia se apresentar dizendo: "Olá, eu sou o Sovi, seu assistente de reservas aéreas. Eu posso comparar preços, descobrir ofertas e reservar seu voo. Quer experimentar? Diga uma cidade e uma data."
+
+É muito importante que seu chatbot ensine algo ao usuário toda vez que tiver oportunidade. Essa é a forma simples de educar o público sobre o que seu bot é capaz de fazer. Concluiu uma tarefa? Seja proativo e se ofereça para executar outra. Comece com interações mais didáticas e vá tornando o bot mais objetivo à medida que a pessoa se familiariza com o que ele é capaz de fazer e que ele vai aprendendo com o comportamento do usuário.
+Chatbot
+
+Conversar com as máquinas já não é mais coisa de ficção científica. Segundo o relatório da Gartner1, as interfaces conversacionais estão entre as dez maiores tendências para 2017 e as marcas precisam estar preparadas para aproveitar tudo que essa nova tendência têm para oferecer.
+Chatbots: como a sua marca se comporta em uma conversa?
+Ler artigo
+chatbots-02
+
+Fontes:
+1. Gartner’s Top 10 Strategic Technology Trends for 2017, outubro de 2016
+Recomendados para você
+O que os chatbots oferecem para as marcas?
+Artigo - Março de 2017
+Quatro insights de tecnologia para ficar de olho em 2017
+Artigo - Abril de 2017
+Think 2017: um bate-papo sobre o futuro do marketing e da publicidade
+Artigo - Junho de 2017
+Dados, insights, inspiração. Tenha acesso às últimas do Google.
+Assine
+Google
+Sobre o Google Produtos Publicidade Negócios Privacidade e Condições de uso Sobre o Think with Google
+Siga-nos em LinkedIn Siga-nos em Twitter Siga-nos em Facebook Assine nosso RSS
+Assine nossa newsletter Assine a newsletter e receba as últimas do Google no seu email.
+Assine
+

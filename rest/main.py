@@ -32,11 +32,11 @@ class chatter:
 
 
     def print(self, **kwargs):
-                self.msg = kwargs.get('msgForward')
-                resposta = self.bot.get_response(self.msg)
-                #print("recebido: %s" % (kwargs.get('msgForward')) )
-
-                return str(resposta)
+        self.msg = kwargs.get('msgForward')
+        resposta = self.bot.get_response(self.msg)
+        #print("recebido: %s" % (kwargs.get('msgForward')) )
+        print(str(resposta))
+        return str(resposta)
 
     def postRec():
         print(request.is_json)
