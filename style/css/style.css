@@ -4,7 +4,12 @@
 			background-image: url(../img/wallpaper.jpg);
 			background-size: cover;
 		}
-
+		.perfil{
+			border-radius: 150px;
+			border: 2px solid rgba(255,255,255, 0.5);
+			height: 75px;
+			width: 75px;
+		}
 		.chat{
 			margin-top: auto;
 			margin-bottom: auto;

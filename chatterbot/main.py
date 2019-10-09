@@ -16,7 +16,9 @@ app = Flask(__name__)
 class chatter:
     def __init__(self):
         self.bot = ChatBot('Charles')
-        self.trainer = ListTrainer(self.bot) 
+        self.trainer = ListTrainer(self.bot)
+        self.conv = open('arq/conversa.txt', 'r').readlines()
+        self.trainer.train(self.conv)
 
     def setNome(self, nome):
         self.nome = nome
