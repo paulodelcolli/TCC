@@ -89,11 +89,11 @@
 							<div class="card-footer">
 								<div class="input-group">
 
-									<input type="text"  id="textbox" name="txt_msg" class="form-control type_msg" placeholder="Insira sua mensagem..." />
+									<input type="text" autocomplete="off" id="textbox" name="txt_msg" class="form-control type_msg" placeholder="Insira sua mensagem..." />
 									<div class="input-group-append">
-										<span class="input-group-text send_btn"><i class="fas fa-location-arrow"></i></span>
+										<span class="input-group-text send_btn"><button style="background-color: rgba(0,0,0, 0.0); border: none" id="button" type="submit"><i style="color:white" class="fas fa-location-arrow"></i></button></span>
 									</div>
-									<input id="button" type="submit" value="enviar"/>
+									
 								</div>
 							</div>
 						</form>
