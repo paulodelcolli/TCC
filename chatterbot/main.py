@@ -1,3 +1,4 @@
+
 from flask import Flask
 from flask import request
 import sys
@@ -17,8 +18,14 @@ class chatter:
     def __init__(self):
         self.bot = ChatBot('Charles')
         self.trainer = ListTrainer(self.bot)
-        self.conv = open('arq/conversa.txt', 'r').readlines()
-        self.trainer.train(self.conv)
+        self.conv1 = ['Olá, meu nome é Charles, como posso te ajudar?','Olá, como você está','Bom dia, como vai?','Boa tarde, como vai?','Meu nome é Charles, qual é seu nome?']
+        self.conv2 = ['Como você tem passado ultimamente?','Como você está se sentindo?','Entendo, como poderiamos melhorar isso?']
+        self.conv3 = ['Você tem tido quaisquer pensamentos sobre prejudicar a si mesmo?','Como andam suas interações sociais?']
+        self.trainer.train(self.conv1)
+        self.trainer.train(self.conv2)
+        self.trainer.train(self.conv3)
+
+    
 
     def setNome(self, nome):
         self.nome = nome

@@ -24,7 +24,7 @@
 						<div class="card-header msg_head">
 							<div class="d-flex bd-highlight">
 								<div class="img_cont">
-									<img src="style/img/foto.png" class="rounded-circle user_img">
+									<img src="style/img/perfil.jpg" class="perfil">
 								</div>
 								<div class="user_info">
 									<span>Charles</span>
@@ -36,21 +36,28 @@
 						<div class="card-body msg_card_body" id="messages">
 
 
+							<?php
+								include 'chatterbot/connect.php';
 
-							<div class="d-flex justify-content-end mb-4" id="resposta">
-								<div class="msg_cotainer_send">
-									<?php 
-										echo($_POST["txt_msg"]);
+
+
+
+										if(isset($_POST["txt_msg"])){
+											print "<div class='d-flex justify-content-end mb-4' id='resposta'>
+												<div class='msg_cotainer_send'>";
+														echo($_POST["txt_msg"]);
+														print "</div></div>";
+
+										}
+
 									?>
-								</div>
-							</div>
-														<div class="d-flex justify-content-start mb-4">
-								<div class="msg_cotainer">
+
+
 										<?php
 
 													if(isset($_POST["txt_msg"]) ){
 														$data = array("msgForward" => $_POST["txt_msg"]);
-														$url = "localhost:5000/recData";  
+														$url = "localhost:5000/recData";
 														$content = json_encode($data);
 
 														$curl = curl_init($url);
@@ -73,13 +80,16 @@
 														curl_close($curl);
 
 														$response = json_decode($json_response, true);
-
-														echo($json_response);
+														if(isset($json_response)){
+														print "<div class='d-flex justify-content-start mb-4'>
+															<div class='msg_cotainer'>";
+															echo($json_response);
+															print "</div></div>";
 													}
-													
+												}
+
 										?>
-								</div>
-							</div>
+
 
 
 
@@ -93,7 +103,7 @@
 									<div class="input-group-append">
 										<span class="input-group-text send_btn"><button style="background-color: rgba(0,0,0, 0.0); border: none" id="button" type="submit"><i style="color:white" class="fas fa-location-arrow"></i></button></span>
 									</div>
-									
+
 								</div>
 							</div>
 						</form>
